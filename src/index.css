@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* === Background & General Styles === */
+body {
+  @apply bg-gradient-to-br from-gray-900 via-purple-900 to-slate-900 text-gray-200 min-h-screen flex justify-center items-center;
+  font-smoothing: antialiased;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* === Container === */
+.container {
+  @apply max-w-3xl w-full mx-auto p-6 rounded-xl bg-gray-800/70 backdrop-blur-md shadow-lg;
+}
+
+
+/* === Form Elements === */
+input, textarea {
+  @apply w-full p-3 rounded-md bg-gray-700 border border-gray-600 text-gray-200 placeholder-gray-400 
+         focus:border-purple-400 focus:ring-2 focus:ring-purple-400 outline-none shadow-sm transition-all;
+}
+
+/* === Button Styles === */
+.btn {
+  @apply w-full py-2 px-4 text-white font-semibold rounded-md shadow-md transition-all;
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600;
+}
+
+.btn-secondary {
+  @apply bg-gray-700 hover:bg-gray-600;
+}
+
+/* === Search Bar === */
+.search-bar {
+  @apply flex items-center bg-gray-700 rounded-md p-2 shadow-sm;
+}
+
+.search-bar input {
+  @apply flex-grow bg-transparent outline-none text-gray-200;
+}
+
+/* === Task Card === */
+.task-card {
+  @apply bg-gray-800 p-4 rounded-lg shadow-md border border-gray-700 transition-all;
+}
+
+/* === Task Filters === */
+.filter-btn {
+  @apply px-4 py-2 rounded-md font-medium transition-all;
+}
+
+.filter-btn.active {
+  @apply bg-purple-600 text-white;
+}
+
+.filter-btn.inactive {
+  @apply bg-gray-700 hover:bg-gray-600 text-gray-300;
+}
