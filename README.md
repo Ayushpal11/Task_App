@@ -1,4 +1,4 @@
-# Task Manager
+# Task Management App
 
 A modern task management application built with React and Tailwind CSS.
 
